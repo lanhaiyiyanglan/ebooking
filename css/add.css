@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+.blue{color:#0974e8!important;}
+.rzTop{font-size: 15px;width:1200px;margin:0 auto;margin-top:40px;height: 35px;line-height: 35px;margin-bottom: 5px;}
+.rzTop span{padding-right:5px;}
+.rzTop em{padding-left:5px;color:#333333;}
+
+.rzSearch{width:1200px;margin:0 auto;margin-top: 20px;min-height:30px;margin-bottom: 36px;}
+.rzSearch > div{display:inline-block;margin-right: 8px;position:relative;}
+.rzSearch > span{padding:0 5px;color:#000000;}
+.rzSearch > em,.rzSearch > div > em{font-size:14px;color:#333333;font-weight:bold;padding-right: 10px;}
+.rzSearch > div .selectUl{display:inline-block;width: 138px;height:28px;line-height: 28px;border:1px solid #dcdcdc;position:relative;vertical-align: middle;text-indent: 10px;margin-top: -4px;}
+.rzSearch > div .selectUl ul{position:absolute;z-index:2;display:none;background: #fff;border: 1px solid #dcdcdc;width: 138px;border-top: none;border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;margin-left: -1px;}
+.rzSearch > div .selectUl ul li{height:30px;line-height:30px;text-indent:10px;border-top: 1px solid #dcdcdc;cursor:pointer;}
+.rzSearch > div .selectUl ul li:hover{background:#ebebeb;}
+.rzSearch > div .selectUl span{position:relative;display:block;cursor:pointer;font-size: 14px;}
+.rzSearch > div .selectUl span i{position:absolute;width:30px;height:16px;border-left:1px solid #dcdcdc;right: 0px;top: 6px;background: url(../images/smallIcons.png) no-repeat 6px -107px;}
+.rzSearch > div .selectUl span i.upDown{background: url(../images/smallIcons.png) no-repeat 6px -74px;}
+.rzSearch input[type='text']{height: 30px;line-height: 30px;border:1px solid #dcdcdc;text-indent: 10px;color: #000000;font-size: 14px;}
+.rzSearch> div input[type='button']{width:80px;height:30px;background:#0974e8;color:#fff;text-align:center;border-radius: 5px;display: inline-block;margin-right: 5px;margin-left: 10px;}
+
+#rzTable{width:1200px;margin:0 auto;border:1px solid #dddddd;font-size:14px;text-align:center;}
+#rzTable tr th{color:#333333;background:#f8f8f8;height: 55px;font-weight:normal;}
+#rzTable tr td{color: #333333;border-top:1px solid #dddddd;height: 55px;}
+#rzTable tr th:last-child,#rzTable tr td:last-child{text-align:left;}
+#totalRz{width:1200px;margin:0 auto;font-size:14px;padding-top: 10px;color:#999999;margin-bottom:100px;}
+
+.noQx{width:1200px;height:500px;margin:130px auto;background:url(../images/noQx.png) no-repeat 50% 50%;}
+.noFind{width:1200px;height:500px;margin:120px auto;background:url(../images/404.png) no-repeat 50% 50%;}
+
+.topLines {
+    padding: 10px 0;
+    width: 1200px;
+    margin: 0 auto;
+    height: 35px;
+}
+.topLines .topLeft {
+    float: left;
+    line-height: 35px;
+    color: #999;
+    font-size: 14px;
+}
+.page {
+    list-style: none;
+    float: right;
+}

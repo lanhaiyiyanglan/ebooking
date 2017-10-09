@@ -1,0 +1,355 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>添加房型</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hotelStyle.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/My97DatePicker/WdatePicker.js"></script>
+    <script src="js/layer/layer.js"></script>
+    <script src="js/RoomPrice.js"></script>
+    <script src="js/citySearch.js"></script>
+    <script src="laypage/laypage.js"></script>
+    <script src="js/inputFull.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="headerNav">
+            <img src="images/logo.png">
+            <div class="navBar">
+                <a href="#">修改密码</a><span>|</span><a href="#">用户设置</a><span>|</span><a href="#">帮助中心</a>
+                <div class="languageChange">
+                    <span class="nowLanguage"><em>中文版</em><i></i></span>
+                    <ul>
+                        <li id="en">ENGLISH</li>
+                        <li id="zh-cn">中文</li>
+                    </ul>
+                </div>
+                <span>欢迎您 · <em>莫小妖</em></span>
+                <span class="sppadding">|</span><a href="#">退出</a>
+            </div>
+        </div>
+    </div>
+    <!--menu-->
+    <div class="menu">
+        <div id="menuItem">
+            <ul>
+                <li><a href="#"><i class="ic1"></i>酒店订单</a></li>
+                <li class="on"><a href="#"><i class="ic2"></i>酒店房型</a></li>
+                <li><a href="#"><i class="ic3"></i>酒店管理</a></li>
+                <li><a href="#"><i class="ic4"></i>酒店服务</a></li>
+                <li><a href="#"><i class="ic5"></i>通用及其他</a></li>
+                <em></em>
+            </ul>
+        </div>
+    </div>
+    <!--addHouse-->
+    <div class="specialSearch addHouseSearch">
+        <div><em>城市</em><input type="text" placeholder="中文/英文" id="cityName" class="searchCity"></div>
+        <div>
+            <div class="selectUl">
+                <span><em>酒店名称</em><i></i><input type="hidden" name="byHotelWt"></span>
+                <ul>
+                    <li data="0">酒店名称</li>
+                    <li data="1">酒店编码</li>
+                </ul>
+            </div>
+        </div>
+        <div><input type="text" id="hotelQueryValue">
+           <div class="hotelSearch">
+              <ul id="hotel_list">
+              </ul>
+              <div id="hotelListPage"></div>
+            </div>
+        </div>
+        <div><input type="button" value="搜索"></div>
+    </div>
+    <!--城市搜索-->
+<div class="searchCont">
+    <div class="citys" id="citys" style="display: none;">
+        <ul class="citys_nav" id="firstrows">
+             <li  class="acti"><a href="javascript:void(0);">热门</a></li>
+             <li><a href="javascript:void(0);">亚洲</a></li>
+             <li><a href="javascript:void(0);">欧洲</a></li>
+             <li><a href="javascript:void(0);">美洲</a></li>
+             <li><a href="javascript:void(0);">大洋洲</a></li>
+             <li><a href="javascript:void(0);">非洲</a></li>
+             <li><a href="javascript:void(0);">海岛</a></li>
+        </ul>
+        <ul class="city_list"> 
+          <li>
+             <dl>
+                <dt>泰国</dt>
+                <dd>
+                  <ul><li code="36153" level="3"><a href="javascript:void(0);" title="毛里求斯">毛里求斯</a></li></ul>
+                </dd>
+             </dl>
+           </li>
+         </ul> 
+         <ul class="city_list" style="display:none;"> 
+           <li>
+             <dl>
+                <dt>中国</dt>
+                <dd>
+                  <ul><li code="36153" level="3"><a href="javascript:void(0);" title="毛里求斯">毛里求斯</a></li></ul>
+                </dd>
+             </dl>
+           </li>
+         </ul> 
+         <ul class="city_list" style="display:none;"> 
+           <li>
+             <dl>
+                <dt>美国</dt>
+                <dd>
+                  <ul><li code="36153" level="3"><a href="javascript:void(0);" title="毛里求斯">毛里求斯</a></li></ul>
+                </dd>
+             </dl>
+           </li>
+         </ul> 
+         <ul class="city_list" style="display:none;"> 
+           <li>
+             <dl>
+                <dt>西班牙</dt>
+                <dd>
+                  <ul><li code="36153" level="3"><a href="javascript:void(0);" title="毛里求斯">毛里求斯</a></li></ul>
+                </dd>
+             </dl>
+           </li>
+         </ul> 
+         <ul class="city_list" style="display:none;"> 
+           <li>
+             <dl>
+                <dt>热门海岛1</dt>
+                <dd>
+                  <ul><li code="36153" level="3"><a href="javascript:void(0);" title="毛里求斯">毛里求斯</a></li></ul>
+                </dd>
+             </dl>
+           </li>
+         </ul> 
+         <ul class="city_list" style="display:none;"> 
+           <li>
+             <dl>
+                <dt>热门海2岛</dt>
+                <dd>
+                  <ul><li code="36153" level="3"><a href="javascript:void(0);" title="毛里求斯">毛里求斯</a></li></ul>
+                </dd>
+             </dl>
+           </li>
+         </ul> 
+         <ul class="city_list" style="display:none;"> 
+           <li>
+             <dl>
+                <dt>热门海3岛</dt>
+                <dd>
+                  <ul><li code="36153" level="3"><a href="javascript:void(0);" title="毛里求斯">毛里求斯</a></li></ul>
+                </dd>
+             </dl>
+           </li>
+         </ul> 
+    </div>
+    <div class="results">
+        <ul  id="resultList">
+           <li><a href="javascript:;"><span>A</span>l<span>A</span>nd Isl<span>A</span>nds 奥兰群岛</a><span class="blue">国家</span></li>
+           <li><a href="javascript:;"><span>A</span>l<span>A</span>nd Isl<span>A</span>nds 奥兰群岛</a><span class="blue">国家</span></li>
+        </ul>
+        <div id="resultsListPage"></div>
+    </div>
+</div>
+    <!--批量修改-->
+    <div id="common">
+        <div id="tables">
+            <h2>芽庄富神度假酒店（Fusion Resort Nha Trang）</h2>
+            <h4>高级特大号套房<div class="typeGo">
+                    <a href="javascript:void(0);" id="beforeTp"></a><span>大床房</span>
+                    <a href="javascript:void(0);" id="afterTp"></a>
+                    <ul id="hiddenType" style="display:none;">
+                        <li>大床房</li>
+                        <li>大床房2</li>
+                        <li>大床房3</li>
+                        <li>大床房4</li>
+                        <li>大床房5</li>
+                        <li>大床房6</li>2
+                    </ul>
+                </div><span>币种：CNY</span></h4>
+            <div class="tableTit">
+                <h3>批量修改价格</h3>
+                
+                <div class="dateGo">
+                    <a href="javascript:void(0);" id="before"></a><input type="text" value="2017-08" id="spSearchDate" onClick="WdatePicker({el:'spSearchDate',isShowClear: false,dateFmt:'yyyy-MM',onpicked:RoomPrice.pickedFunc,readOnly:true})">
+                    <a href="javascript:void(0);" id="after"></a>
+                    <input type="hidden" id="hiSearchYear" value="2017" />
+                    <input type="hidden" id="hiSearchMonth" value="8" />
+                </div>
+                <p>温馨提示：蓝色<i></i>表示开房状态， 灰色<i class="gray"></i>表示关房状态</p>
+            </div>
+            <div class="tableday">
+                <div style="display:none" id="tdTemp">
+                    <div class="tabtd">
+                        <h2 id="h{0}">{Day}</h2><i>满</i>
+                        <div class="tab_marbot">价格：￥<span class="tdprice">1265</span></div>
+                        <div class="tab_marbot">房量：<br><span class="tdroomtype">保<span>1/3</span> 非<em>2/4</em></span>
+                        </div>
+                        <div class="tab_configure">
+                            <div class="tab_ren">{PersonCount}<span class="mt_placeholder_input_tab_pax">人</span></div>
+                            <div class="tab_can" {style}>{Breakfast}份</div>
+                        </div>
+                    </div>
+                </div>
+                <table class="tablebox" border="0" cellpadding="0" cellspacing="0" onselectstart="return false">
+                    <thead>
+                        <tr>
+                            <th><span id="mt_skin_sunday1">周日</span></th>
+                            <th><span id="mt_skin_monday1">周一</span></th>
+                            <th><span id="mt_skin_tuesday1">周二</span></th>
+                            <th><span id="mt_skin_wednesday1">周三</span></th>
+                            <th><span id="mt_skin_thursday1">周四</span></th>
+                            <th><span id="mt_skin_friday1">周五</span></th>
+                            <th><span id="mt_skin_saturday1">周六</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="trRoom">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tableTit">
+                <h3>修改周末价格</h3>
+            </div>
+        </div>
+        <!-- 修改周末价格开始 -->
+        <div class="tquery">
+            <div class="tqDate">
+                <span>自定义日期</span>
+                <input type="text" id="txtBegin" name="date1" value="2017-06-3" onClick="WdatePicker({ startDate: '%y-%M-%d', readOnly: true, isShowClear: false, doubleCalendar: true, minDate: '%y-%M-{%d+1}', onpicked: function () { var txtBegin = $('#txtBegin').val(); $('#txtEnd').val(MT.Date.AddDay(txtBegin, 1)); } })"
+                    data-language="en" class="datepicker-here">
+                <em>—</em>
+                <input type="text" id="txtEnd" name="date2" value="2017-06-3" onClick="WdatePicker({ minDate: '#F{$dp.$D(\'txtBegin\',{d:1})}', readOnly: true, isShowClear: false, doubleCalendar: true })" data-language="en" class="datepicker-here">
+            </div>
+            <div class="quer_input">
+                <ul>
+                    <li><a><span id="mt_skin_weekset">自定义周末</span></a></li>
+                    <li><label><a><input type="checkbox" id="allcheck" /><span id="mt_skin_selectall">全选</span></a></label></li>
+                    <li><label><a><input type="checkbox" value="1" /><span id="mt_skin_monday">周一</span></a></label></li>
+                    <li><label><a><input type="checkbox" value="2" /><span id="mt_skin_tuesday">周二</span></a></label></li>
+                    <li><label><a><input type="checkbox" value="3" /><span id="mt_skin_wednesday">周三</span></a></label></li>
+                    <li><label><a><input type="checkbox" value="4" /><span id="mt_skin_thursday">周四</span></a></label></li>
+                    <li><label><a><input type="checkbox" value="5" /><span id="mt_skin_friday">周五</span></a></label></li>
+                    <li><label><a><input type="checkbox" value="6" /><span id="mt_skin_saturday">周六</span></a></label></li>
+                    <li><label><a><input type="checkbox" value="0" /><span id="mt_skin_sunday">周日</span></a></label></li>
+                </ul>
+            </div>
+
+            <div class="choose">
+                周末价格
+                <div class="choose_weeks"><input placeholder="价格" type="text" id="roomprice" /><i>CNY</i></div>
+                <div class="choose_weeks">房量<span><input type="text" id="roomcount" placeholder="保留房" /><i>间</i></span><span><input placeholder="非保留房" type="text" id="roomcount2" /><i>间</i></span></div>
+                <div class="choose_weeks">上线状态<label class="label-switch"><input type="checkbox"><div class="checkbox"></div></label></div>
+            </div>
+
+            <div class="switch">
+                <input class="swclick" type="button" value="确定" id="btnSavePrice" /><input class="swdot" type="button" value="取消" id="btnCancelsw" />
+            </div>
+        </div>
+        <!-- 修改周末价格结束 -->
+    </div>
+    <!-- 价格房态设置结束 -->
+    <!--footer-->
+    <div class="footer">
+        <div class="footerMain">
+            <ul>
+                <li>
+                    <i class="footerIcon1"></i>
+                    <div class="footerInfo">
+                        <h3>广告合作</h3>
+                        <p>广告招商：0731-88725857</p>
+                        <p>招商邮箱：sevice@m-tu.com</p>
+                        <p>联系QQ ：3499647496</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="footerIcon2"></i>
+                    <div class="footerInfo">
+                        <h3>商务合作</h3>
+                        <p>渠道合作：0731-88725857</p>
+                        <p>合作邮箱：chenhe@m-tu.com</p>
+                        <p>联系QQ ：291780870</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="footerIcon3"></i>
+                    <div class="footerInfo">
+                        <h3>7*24小时客服</h3>
+                        <p>客服热线：189-3247-6485</p>
+                        <p>联系邮箱：mtcs@m-tu.com</p>
+                        <p>联系QQ ：209252360</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="ourWx">
+                <img src="http://116.62.51.171:5001/images/wx.png">
+                <p>欢迎关注我司微信公众账号</p>
+            </div>
+        </div>
+    </div>
+    <div class="copyRight">Copyright © m-tu.com 湖南萌兔旅游科技有限公司·长沙市湘江中路万达总部国际C2栋21层 湘ICP备16000066号-1</div>
+</body>
+
+</html>

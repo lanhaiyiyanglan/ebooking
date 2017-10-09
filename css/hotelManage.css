@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.orange{color:#ff6600!important;}
+.hui{color:#333333!important;}
+.manageTop{font-size: 15px;width:1200px;margin:0 auto;margin-top:40px;height: 35px;line-height: 35px;}
+.manageTop span{padding-right:5px;color:#0974e8;}
+.manageTop em{padding-left:5px;color:#333333;}
+
+.hotelManage{width:1200px;margin:0 auto;margin-top:40px;min-height:30px;}
+.hotelManageTT{margin-top: 20px;margin-bottom:36px;}
+.hotelManage > div{display:inline-block;margin-right: 8px;position:relative;}
+
+.hotelManage > div .hotelSearch{position:absolute;width: 300px;display: none;height: auto;overflow:hidden;z-index: 4;border: 1px solid #dddddd;margin-top: 1px;background: #fff;}
+.hotelManage > div .hotelSearch >ul li{height:30px;line-height:30px;padding: 0 20px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;word-break: break-word;background: #ffffff;color: #0f5198;}
+.hotelManage > div .hotelSearch >ul li.active,.hotelManage > div .hotelSearch >ul li:hover{height:28px;line-height:28px;background:#e8f4ff;cursor:pointer;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;}
+.hotelManage > div .hotelSearch >ul li span.searchKeys{font-weight: bold;color: #f77d00;}
+#hotelListPage{text-align:center;}
+
+.hotelManage > span{padding:0 5px;color:#000000;}
+.hotelManage > em,.hotelManage > div > em{font-size:14px;color:#333333;font-weight:bold;padding-right: 10px;}
+.hotelManage > div .selectUl{display:inline-block;width: 138px;height:28px;line-height: 28px;border:1px solid #dcdcdc;position:relative;vertical-align: middle;text-indent: 10px;margin-top: -4px;}
+.hotelManage > div .selectUl ul{position:absolute;z-index:2;display:none;background: #fff;border: 1px solid #dcdcdc;width: 138px;border-top: none;border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;margin-left: -1px;}
+.hotelManage > div .selectUl ul li{height:30px;line-height:30px;text-indent:10px;border-top: 1px solid #dcdcdc;cursor:pointer;}
+.hotelManage > div .selectUl ul li:hover{background:#ebebeb;}
+.hotelManage > div .selectUl span{position:relative;display:block;cursor:pointer;font-size: 14px;}
+.hotelManage > div .selectUl span i{position:absolute;width:30px;height:16px;border-left:1px solid #dcdcdc;right: 0px;top: 6px;background: url(../images/smallIcons.png) no-repeat 6px -107px;}
+.hotelManage > div .selectUl span i.upDown{background: url(../images/smallIcons.png) no-repeat 6px -74px;}
+.hotelManage input[type='text']{height: 30px;line-height: normal;border:1px solid #dcdcdc;text-indent: 10px;color: #000000;font-size: 14px;}
+.hotelManage > div input[type='button']{min-width: 80px;padding: 0 5px;height:30px;background:#0974e8;color:#fff;text-align:center;border-radius: 5px;display: inline-block;margin-right: 5px;margin-left:5px;}
+.hotelManage > div > a{display:block;height:30px;line-height:30px;padding:0 10px;background:#0974e8;color:#fff;text-align:center;border-radius: 5px;margin-right: 5px;}
+#sp_count {
+color:#f77d00
+}
+a#export{background:none;color:#0974e8;float:right;font-size:14px;line-height: 30px;}
+#cityName{width: 172px;}
+#hotelInfo{width: 210px;}
+
+
+#manageTable,#addTable{width:1200px;margin:0 auto;table-layout:fixed;text-align:center;font-size:14px;border:1px solid #dddddd;}
+.manageDiv {
+    min-height: 200px;
+    overflow: hidden;
+    min-width:1200px;
+}
+#manageTable tr th,#addTable tr th{font-weight:normal;background:#f8f8f8;border:1px solid #dddddd;height:58px;color: #333333;}
+#manageTable tr th:first-child,#addTable tr th:first-child{text-align:left;padding-left:10px;}
+#manageTable tr th:first-child input,#addTable tr th:first-child input{display:inline-block;width:15px;height:15px;vertical-align: middle;margin-top: -2px;margin-right: 5px;}
+#addTable tr td:first-child{color:#0974e8;}
+#manageTable tr td,#addTable tr td{border:1px solid #dddddd;height:68px;position: relative;color: #333333;}
+#manageTable tr td input,#addTable tr td input{display:block;position:absolute;z-index:2;width:15px;height:15px;left: 10px;margin-top: 3px;}
+#manageTable tr td:first-child,#addTable tr td:first-child{text-align:left;padding-left: 30px;}
+#manageTable tr td a,#addTable tr td a{color:#0974e8;width:50%;display:inline-block;float: left;line-height: 24px;cursor: pointer;}
+#manageTable tr td:last-child,#addTable tr td:last-child{padding:0 10px;}
+#manageTable tr th label,#addTable tr th label,#manageTable tr td:first-child label,#addTable tr td:first-child label{cursor: pointer;}
+.addNewHotel{width:1200px;margin:0 auto;}
+.hotelManage2{margin-top:20px;margin-bottom:20px;}
+.addNewHotel input{width:88px;display:block;height:32px;line-height:32px;text-align:center;color:#fff;background:#0974e8;border-radius:4px;margin-bottom:20px;}
+#manageTable tr td input[type="text"]{border:1px solid #bacdd8;display:inline-block;vertical-align:middle;width:70px;height: 30px;text-align:center;position: relative;left: 0px;}

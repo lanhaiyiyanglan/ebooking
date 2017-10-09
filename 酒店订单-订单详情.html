@@ -1,0 +1,195 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>酒店订单-订单详情</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/order.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/order.js"></script>
+</head>
+
+<body>
+<!--header-->
+<div class="header">
+   <div class="headerNav">
+     <img src="images/logo.png">
+     <div class="navBar">
+         <a href="#">修改密码</a><span>|</span><a href="#">用户设置</a><span>|</span><a href="#">帮助中心</a>
+         <div class="languageChange">
+                 <span class="nowLanguage"><em>中文版</em><i></i></span>
+                 <ul>
+                   <li id="en">ENGLISH</li>
+                   <li id="zh-cn">中文</li>
+                 </ul>
+         </div>
+         <span>欢迎您 · <em>莫小妖</em></span>
+         <span class="sppadding">|</span><a href="#">退出</a>
+     </div>
+   </div>
+</div>
+<!--menu-->
+<div class="menu">
+  <div id="menuItem">
+      <ul>
+         <li class="on"><a href="#"><i class="ic1"></i>酒店订单</a></li>
+         <li><a href="#"><i class="ic2"></i>酒店房型</a></li>
+         <li><a href="#"><i class="ic3"></i>酒店管理</a></li>
+         <li><a href="#"><i class="ic4"></i>酒店服务</a></li>
+         <li><a href="#"><i class="ic5"></i>通用及其他</a></li>
+         <em></em>
+      </ul>
+  </div>
+</div>
+<!--orderDetail-->
+<div class="detailTop"><span class="blue">订单中心</span>><em>订单详情</em></div>
+<div class="orderDetail">
+  <div class="dtLeft">
+     <div class="dtItem">
+        <div class="tit"><span>订单信息</span></div>
+        <dl>
+          <dt>
+             <p class="blue"><em>订单号</em>3757445698</p>
+             <p class="blue"><em>订单号</em>已确认</p>
+             <p><em>酒店预定号</em><input type="text"><input type="button" value="更改"><span>多个预定号请用逗号"，"隔开</span></p>
+          </dt>
+          <dd>
+             <p class="orange"><em>订单金额</em>CNY 3680</p>
+             <p class="orange"><em>操作人</em>YY</p>
+          </dd>
+        </dl>
+     </div>
+     <div class="dtItem">
+       <div class="tit"><span>酒店信息</span></div>
+       <p><em>酒店名称</em>芽庄四级度假酒店（Mercure Hotel Sapporo）</p>
+       <p><em>酒店电话</em>+81-11-421 1100</p>
+       <p><em>酒店地址</em>2-4 Minami 4-jo,Nishi 2-chome Chuo-ku</p>
+       <p><em>联系方式</em></p>
+     </div>
+     <div class="dtItem">
+       <div class="tit"><span>酒店信息</span></div>
+       <p><em>物理房型</em>高级标准房</p>
+       <p><em>售卖房型</em>标准房（连住2晚及以上）（特惠）（双人入住）（无早）</p>
+       <p><em>床型</em>大/双床</p>
+       <p class="blue"><em>入离时间</em>2017-06-23至2017-06-25 2晚</p>
+       <p><em>预订间数</em>1</p>
+       <p><em>入住人数</em>2</p>
+       <p><em>入住人1</em>TANG/PO LAM</p>
+       <p><em>入住人2</em>TANG/PO LAM</p>
+       <p id="daliyPrice"><em>每日房价</em>
+          <table>
+            <tr>
+              <th>06-239(五)</th>
+              <th>06-239(五)</th>
+            </tr>
+            <tr>
+              <td>
+                <p class="orange">CNY1280</p>
+                <p>不含早</p>
+              </td>
+              <td>
+                <p class="orange">CNY1280</p>
+                <p>不含早</p>
+              </td>
+            </tr>
+          </table>
+       </p>
+     </div>
+     <div class="dtItem">
+       <div class="tit"><span>联系信息</span></div>
+       <p><em>联系人</em>TANG/PO LAM</p>
+     </div>
+     <div class="dtItem">
+       <div class="tit"><span>特殊要求</span></div>
+       <p>TANG/PO LAM</p>
+     </div>
+     <div class="dtItem">
+       <div class="tit"><span>备注</span></div>
+     </div>
+     <div class="dtItem">
+       <div class="tit"><span>订单取消规则</span></div>
+       <p class="blue"><em>最晚取消时间</em>2017-06-22 17:00:00</p>
+     </div>
+     <div class="dtItem" id="oprationTable">
+       <div class="tit"><span>订单日志</span></div>
+       <table>
+         <tr>
+           <th width="100">编号</th>
+           <th width="212">操作时间</th>
+           <th width="140">操作人</th>
+           <th>操作描述</th>
+         </tr>
+         <tr>
+           <td>1</td>
+           <td>2017-05-27 12:32:12</td>
+           <td>YY</td>
+           <td>接受预定（375799234）</td>
+         </tr>
+         <tr>
+           <td>2</td>
+           <td>2017-05-27 12:32:12</td>
+           <td>YY</td>
+           <td>接受预定（375799234）</td>
+         </tr>
+         <tr>
+           <td>3</td>
+           <td>2017-05-27 12:32:12</td>
+           <td>YY</td>
+           <td>接受预定（375799234）</td>
+         </tr>
+       </table>
+     </div>
+  </div>
+  <div class="dtRight">
+     <ul>
+       <li><a href="javascript:void(0);" id="jieshou">接受</a></li>
+       <li><a href="#">拒绝</a></li>
+       <li><a href="#">打印</a></li>
+       <li><a href="javascript:void(0);" id="beizhu">备注</a></li>
+       <li><a href="#">返回</a></li>
+     </ul>
+  </div>
+</div>
+<!--footer-->
+<div class="footer">
+ <div class="footerMain">
+     <ul>
+       <li>
+         <i class="footerIcon1"></i>
+         <div class="footerInfo">
+           <h3>广告合作</h3>
+             <p>广告招商：0731-88725857</p>
+             <p>招商邮箱：sevice@m-tu.com</p>
+             <p>联系QQ ：3499647496</p>
+         </div>
+       </li>
+       <li>
+         <i class="footerIcon2"></i>
+         <div class="footerInfo">
+           <h3>商务合作</h3>
+             <p>渠道合作：0731-88725857</p>
+             <p>合作邮箱：chenhe@m-tu.com</p>
+             <p>联系QQ ：291780870</p>
+         </div>
+       </li>
+       <li>
+         <i class="footerIcon3"></i>
+         <div class="footerInfo">
+           <h3>7*24小时客服</h3>
+             <p>客服热线：189-3247-6485</p>
+             <p>联系邮箱：mtcs@m-tu.com</p>
+             <p>联系QQ ：209252360</p>
+         </div>
+       </li>
+     </ul>
+     <div class="ourWx">
+         <img src="http://116.62.51.171:5001/images/wx.png">
+         <p>欢迎关注我司微信公众账号</p>
+    </div>
+  </div>
+</div>
+<div class="copyRight">Copyright © m-tu.com 湖南萌兔旅游科技有限公司·长沙市湘江中路万达总部国际C2栋21层  湘ICP备16000066号-1</div>
+</body>
+</html>
